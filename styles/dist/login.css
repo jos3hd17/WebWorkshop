@@ -1,0 +1,26 @@
+.login-form-box {
+  width: 80%;
+  height: 50vh;
+  border: solid 1px #fafafa;
+  border-radius: 5px;
+  margin-top: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fafafa;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.center-form {
+  width: 90%;
+}
+
+.top {
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=login.css.map */
