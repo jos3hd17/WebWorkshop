@@ -1,0 +1,46 @@
+p, h1, h2, h3, h4, h5, label{
+    font-family: Arial, Helvetica, sans-serif
+}
+
+:root {
+    --main-bg-color: coral;
+    --main-txt-color: blue; 
+    --lines-colors:gray;
+    --main-padding: 15px; 
+    --border-radius-generic:5px;
+    --main-margin:10px;
+  }
+
+.contenedor-principal{
+    margin: var(--main-margin);
+}
+
+.contenedor-principal .contenedor-login{
+    margin: auto;
+    border-radius: var(--border-radius-generic);
+    width: 30%;
+    border: solid 1px var(--lines-colors);
+    margin-top:25vh;
+    padding: var(--main-padding);
+}
+
+.contenedor-principal .contenedor-login .avatar{
+    margin: auto;
+    border-radius: var(--border-radius-generic);
+    width: 40%;
+    height: 200px;
+    background-image: url('./../../../assets/img/avatar.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+ .contenedor-principal .contenedor-login .formulario .columna-uno,  .contenedor-principal .contenedor-login .formulario .columna-dos {
+    display: inline-block;
+    width: 45%;
+    height: 100%;
+ }
+ .columna-uno, .columna-dos{
+     margin:var(--main-margin);
+ }
+ .input-user, .input-pass, .boton-loguearse{
+     margin:4px;
+ }

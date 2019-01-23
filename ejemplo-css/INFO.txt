@@ -1,0 +1,3 @@
+Aplicacion tipo Multi-Page-Application.
+
+Estructura definida y separada por componentes o páginas
