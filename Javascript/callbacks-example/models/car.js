@@ -58,7 +58,7 @@ function createCar(setCarInfo, engine, tyres){
 }
 
 function newEngine(setEngine, fillEngine){
-    var engine = setEngine(fillEngine());
+    var engine = fillEngine(setEngine())
     console.log(engine);
     console.log("Engine Created...");
     return engine;
