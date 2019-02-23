@@ -1,0 +1,10 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "contact": {
+    "url": "mongodb://admin:admin123@ds349175.mlab.com:49175/contact",
+    "connector": "mongodb"
+  }
+}

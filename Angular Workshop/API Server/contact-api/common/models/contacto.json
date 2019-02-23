@@ -1,0 +1,36 @@
+{
+  "name": "Contacto",
+  "plural": "Contactos",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "firstname": {
+      "type": "string"
+    },
+    "secondname": {
+      "type": "string"
+    },
+    "lastname": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "number"
+    },
+    "birthdate": {
+      "type": "string"
+    },
+    "profession": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
