@@ -1,0 +1,32 @@
+<div class="container">
+  <br>
+  <div class="row">
+    <div class="col-md-10">
+      <h2>Contact List</h2></div>
+    <div class="col-md-2">
+      <button class="btn btn-success" routerLink="/create">New Contact</button>
+    </div>
+  </div>
+  <hr>
+
+  <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First Name</th>
+          <th scope="col">Lastname</th>
+          <th scope="col">Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let list of contactList; let i = index">
+          <th scope="row">{{i}}</th>
+          <td>{{list.firstname}}</td>
+          <td>{{list.lastname}}</td>
+          <td>{{list.email}}</td>
+        </tr>
+       </tbody>
+    </table>
+
+</div>
+
