@@ -6,17 +6,14 @@ import { ContactDetailComponent } from '../contact/contact-detail/contact-detail
 
 const routes: Routes = [
   {
-    path: '',
-    component: ContactListComponent
+    path: 'contact',
+    loadChildren: '../contact/contact.module#ContactModule'
   },
   {
-    path: 'create',
-    component: CreateContactComponent
-  },
-  {
-    path: 'detail',
-    component: ContactDetailComponent
+    path: 'payments',
+    loadChildren: '../payments/payments.module#PaymentsModule'
   }
+
 ];
 
 @NgModule({
