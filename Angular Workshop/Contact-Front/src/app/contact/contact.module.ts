@@ -7,6 +7,7 @@ import { ContactListComponent } from './contact-list/contact-list.component';
 import { CreateContactComponent } from './create-contact/create-contact.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { ContactListService } from './contact-list/contact-list.service';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { FormsModule } from '@angular/forms';
     ContactRoutingModule,
     HttpClientModule,
     FormsModule
-  ]
+  ],
+  providers: [ ContactListService]
 })
 export class ContactModule { }

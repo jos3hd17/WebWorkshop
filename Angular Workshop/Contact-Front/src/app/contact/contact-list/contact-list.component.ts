@@ -11,6 +11,8 @@ import { Router } from '@angular/router';
 })
 export class ContactListComponent implements OnInit {
   contactList: Contact;
+  contacto = false;
+
   constructor(private service: ContactListService, private router: Router) { }
 
   ngOnInit() {
@@ -20,8 +22,8 @@ export class ContactListComponent implements OnInit {
   }
 
   sendDetail(contacto): void {
-    console.log(contacto);
-    sessionStorage.setItem('contacto', JSON.stringify(contacto));
+    this.contacto = true;
+    this.service.setContact(contacto);
     this.router.navigate(['/contact/detail']);
   }
 

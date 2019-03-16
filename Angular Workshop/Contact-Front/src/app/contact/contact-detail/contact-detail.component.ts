@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject, OnDestroy } from '@angular/core';
 import { Contact } from '../models/contact.model';
+import { ContactListService } from '../contact-list/contact-list.service';
 
 @Component({
   selector: 'app-contact-detail',
@@ -8,10 +9,14 @@ import { Contact } from '../models/contact.model';
 })
 export class ContactDetailComponent implements OnInit {
   contact: Contact = new Contact();
-  constructor() { }
-
-  ngOnInit() {
-    this.contact = JSON.parse(sessionStorage.getItem('contacto'));
-  }
+  constructor(@Inject(ContactListService) service) {
+    service.getContact().subscribe(
+      response => {
+        this.contact = response;
+        console.log(response);
+      }
+    );
+   }
+   ngOnInit() {}
 
 }
