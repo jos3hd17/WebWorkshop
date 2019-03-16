@@ -1,0 +1,24 @@
+{
+  "name": "payment",
+  "plural": "payments",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nombre": {
+      "type": "string"
+    },
+    "valor": {
+      "type": "number"
+    },
+    "apellido": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -38,5 +38,9 @@
   "Contacto": {
     "dataSource": "contact",
     "public": true
+  },
+  "payment": {
+    "dataSource": "contact",
+    "public": true
   }
 }

@@ -5,6 +5,7 @@
   },
   "contact": {
     "url": "mongodb://admin:admin123@ds349175.mlab.com:49175/contact",
+    "name": "contact",
     "connector": "mongodb"
   }
 }
