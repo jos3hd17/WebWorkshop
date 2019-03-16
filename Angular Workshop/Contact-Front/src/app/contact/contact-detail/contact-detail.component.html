@@ -1,3 +1,29 @@
-<p>
-  contact-detail works!
-</p>
+<div class="container">
+    <br>
+    <div class="row">
+      <div class="col-md-10">
+        <h2>Contact List</h2></div>
+      <div class="col-md-2">
+        <button class="btn btn-success" routerLink="/create">New Contact</button>
+      </div>
+    </div>
+    <hr>
+
+    <div class="row center">
+      <h5>FirstName</h5>
+      <h3 class="center">{{contact.firstname}} {{contact.lastname}}</h3> 
+    </div>
+    <div class="row center">
+        <h5>Email</h5>
+        <h5 class="center">{{contact.email}}</h5>
+    </div>
+    <div class="row center">
+        <h5>Phone</h5>
+        <p class="center">{{contact.phone}}</p>
+    </div>
+    <div class="row center">
+        <h5>Profession</h5>
+        <h4 class="center">{{contact.profession}}</h4>
+    </div>
+
+</div>

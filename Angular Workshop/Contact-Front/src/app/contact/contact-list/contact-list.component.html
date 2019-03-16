@@ -19,11 +19,11 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let list of contactList; let i = index">
+        <tr *ngFor="let contact of contactList; let i = index" (click)="sendDetail(contact)">
           <th scope="row">{{i}}</th>
-          <td>{{list.firstname}}</td>
-          <td>{{list.lastname}}</td>
-          <td>{{list.email}}</td>
+          <td>{{contact.firstname}}</td>
+          <td>{{contact.lastname}}</td>
+          <td>{{contact.email}}</td>
         </tr>
        </tbody>
     </table>
